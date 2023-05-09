@@ -19,3 +19,13 @@ export async function createSearch(data) {
         throw new Error(err)
     }
 }
+
+export async function getSearch(id) {
+    try {
+        const searchData = await searchesAPI.detail(id)
+        return searchData
+    } catch (err) {
+        console.log(err)
+        throw new Error(err)
+    }
+}

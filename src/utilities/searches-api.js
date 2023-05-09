@@ -40,3 +40,22 @@ export async function create(data) {
         return err
     }
 }
+
+export async function detail(id) {
+    try {
+        const options = {
+            method: "GET"
+        }
+        const url = `${BASE_URL}/${id}`
+        const response = await fetch (url, options)
+
+        if (response.ok) {
+            return response.json()
+        } else {
+            throw new Error("Invalid Request (Detail)")
+        }
+    } catch (err) {
+        console.log(err)
+        return err
+    }
+}

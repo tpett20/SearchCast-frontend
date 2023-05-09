@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
 
 export default function SearchesIndex() {
@@ -26,7 +27,9 @@ export default function SearchesIndex() {
         return searches?.map(search => {
             return (
                 <div key={search._id}>
-                    <p>{search.input}</p>
+                    <Link to={`/searches/${search._id}`}>
+                        <p>{search.input}</p>
+                    </Link>
                 </div>
             )
         })
@@ -52,7 +55,7 @@ export default function SearchesIndex() {
             <h1>Add a Search</h1>
             <form onSubmit={handleSubmit}>
                 <input
-                    value={newForm.name}
+                    value={newForm.input}
                     onChange={handleChange}
                     type="text"
                     name="input"
