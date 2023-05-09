@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { getSearches } from '../../../utilities/searches-service'
 
 export default function SearchesIndex() {
     const [searches, setSearches] = useState([])
@@ -6,16 +7,19 @@ export default function SearchesIndex() {
 
     const BASE_URL = "http://localhost:4000/searches"
 
-    const getSearches = async () => {
+    async function handleRequest() {
         try {
-            const response = await fetch(BASE_URL)
-            const allSearches = await response.json()
-            setSearches(allSearches)
+            const apiResponse = await getSearches()
+            setSearches(apiResponse)
             setIsLoading(false)
         } catch (err) {
             console.log(err)
         }
     }
+
+    useEffect(() => {
+        handleRequest()
+    }, [isLoading])
 
     const loaded = () => {
         return searches?.map(search => {
@@ -26,10 +30,6 @@ export default function SearchesIndex() {
             )
         })
     }
-
-    useEffect(() => {
-        getSearches()
-    }, [isLoading])
 
     return (
         <>
