@@ -24,6 +24,7 @@ export default function SearchesShow() {
 
     useEffect(() => {
         handleRequest()
+        // eslint-disable-next-line
     }, [])
 
     const loaded = () => {

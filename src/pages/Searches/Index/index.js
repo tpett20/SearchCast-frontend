@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
 import { accessSpotify } from "../../../utilities/results-services"
 import ResultsCard from "../../../components/Results/ResultsCard"
@@ -21,6 +20,7 @@ export default function SearchesIndex() {
 
     useEffect(() => {
         handleRequest()
+        // eslint-disable-next-line
     }, [isLoading])
 
     const loaded = () => {

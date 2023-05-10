@@ -2,7 +2,7 @@ import { Buffer } from "buffer"
 import axios from "axios"
 import qs from 'qs'
 import { getSpotifyToken } from "./spotifyToken"
-
+import { cleanResults, convertInput } from "./spotifyResults"
 
 export async function requestSpotifyToken() {
 
@@ -45,21 +45,4 @@ export async function searchSpotifyAPI(input) {
     } catch (err) {
         console.log(err)
     }
-}
-
-function cleanResults(results, input) {
-    return results.filter(r => r.description.includes(input)).slice(0,5)
-}
-
-function convertInput(input) {
-    // converts an input with spaces into a string that the API query can use
-    let newString = ''
-    for (let char of input) {
-        if (char === ' ') {
-            newString += '+'
-        } else {
-            newString += char
-        }
-    }
-    return newString
 }

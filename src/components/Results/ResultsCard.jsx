@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { searchSpotify } from "../../utilities/results-services"
+import { limitResults } from "../../utilities/spotifyResults"
 
 export default function ResultsCard({search}) {
     const [results, setResults] = useState(null)
@@ -10,15 +11,17 @@ export default function ResultsCard({search}) {
         try {
             // const resultsData = await searchSpotify('Joey Votto')
             const resultsData = await searchSpotify(search.input)
-            setResults(resultsData)
+            const shortenedData = limitResults(resultsData)
+            setResults(shortenedData)
             setIsLoading(false)
         } catch (err) {
             console.log(err)
         }
     }
-
+    
     useEffect(() => {
         handleRequest()
+        // eslint-disable-next-line
     }, [isLoading])
 
     const loaded = () => {
@@ -28,12 +31,12 @@ export default function ResultsCard({search}) {
                     <p>{search.input}</p>
                 </Link>
                 <div>
-                    {results?.map(r => {
+                    {results?.map((r, idx) => {
                         return (
-                            <>
-                                <img src={r.images[2].url} alt={r.name}/>
+                            <div key={idx}>
+                                {/* <img src={r.images[2].url} alt={r.name}/> */}
                                 <p>{r.name}</p>
-                            </>
+                            </div>
                         )
                     })}
                 </div>

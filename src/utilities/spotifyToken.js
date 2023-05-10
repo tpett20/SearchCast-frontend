@@ -3,7 +3,6 @@ const getSpotifyToken = () => {
 }
 
 const setSpotifyToken = (token) => {
-    console.log('setting spotify token')
     return localStorage.setItem('spotifyToken', token)
 }
 
