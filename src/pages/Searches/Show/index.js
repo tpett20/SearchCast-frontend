@@ -12,7 +12,7 @@ export default function SearchesShow() {
     const handleRequest = async () => {
         try {
             const searchData = await getSearch(id)
-            // const resultsData = await searchSpotify('Joey+Votto')
+            // const resultsData = await searchSpotify('Joey Votto')
             const resultsData = await searchSpotify(searchData.input)
             setSearch(searchData)
             setResults(resultsData)

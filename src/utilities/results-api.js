@@ -29,9 +29,10 @@ export async function requestSpotifyToken() {
 
 export async function searchSpotifyAPI(input) {
 
+    const convertedInput = convertInput(input)
     const spotifyToken = getSpotifyToken()
     console.log('Search Spotify - Token', spotifyToken)
-    const apiURL = `https://api.spotify.com/v1/search?q=${input}&type=episode&market=US&limit=5`
+    const apiURL = `https://api.spotify.com/v1/search?q=${convertedInput}&type=episode&market=US&limit=10`
 
     try {
         const response = await axios.get(apiURL, {
@@ -39,8 +40,26 @@ export async function searchSpotifyAPI(input) {
                 'Authorization': `Bearer ${spotifyToken}`
             }
         })
-        return response.data.episodes.items
+        const data = response.data.episodes.items
+        return cleanResults(data, input)
     } catch (err) {
         console.log(err)
     }
+}
+
+function cleanResults(results, input) {
+    return results.filter(r => r.description.includes(input)).slice(0,5)
+}
+
+function convertInput(input) {
+    // converts an input with spaces into a string that the API query can use
+    let newString = ''
+    for (let char of input) {
+        if (char === ' ') {
+            newString += '+'
+        } else {
+            newString += char
+        }
+    }
+    return newString
 }
