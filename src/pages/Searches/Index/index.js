@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
+import { accessSpotify } from "../../../utilities/results-services"
 
 export default function SearchesIndex() {
     const [searches, setSearches] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [newForm, setNewForm] = useState({input: ""})
-
-    const BASE_URL = "http://localhost:4000/searches"
 
     async function handleRequest() {
         try {
@@ -63,6 +62,7 @@ export default function SearchesIndex() {
                 />
                 <button>Add Search</button>
             </form>
+            <button onClick={accessSpotify}>Access Spotify!</button>
             <h1>Searches - Index</h1>
             {isLoading ? <p>Loading</p> : loaded()}
         </section>
