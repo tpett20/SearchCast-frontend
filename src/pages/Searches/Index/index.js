@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
 import { accessSpotify } from "../../../utilities/results-services"
+import ResultsCard from "../../../components/Results/ResultsCard"
 
 export default function SearchesIndex() {
     const [searches, setSearches] = useState([])
@@ -26,9 +27,7 @@ export default function SearchesIndex() {
         return searches?.map(search => {
             return (
                 <div key={search._id}>
-                    <Link to={`/searches/${search._id}`}>
-                        <p>{search.input}</p>
-                    </Link>
+                    <ResultsCard search={search}/>
                 </div>
             )
         })
