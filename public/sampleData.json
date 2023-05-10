@@ -1,10 +1,212 @@
-[
-    {
-    "name": "Joey Votto Joins the Chris Rose Rotation",
-    "description": "Joey Votto is the charismatic, long-time first baseman of the Cincinnati Reds."
-    },
-    {
-        "name": "Austin Hedges Joins the Chris Rose Rotation",
-        "description": "Austin Hedges is the charismatic catcher of the Pittsburgh Pirates."
+{
+    "episodes": {
+        "href": "https://api.spotify.com/v1/search?query=Joey+Votto&type=episode&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=5",
+        "items": [
+            {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/0573818a92547d5a558ef83cb4fd1db62e5c6ac1",
+                "description": "Download the Draftkings Sportsbook App and use code COMPOUND, new customers who bet 5 dollars can get 200 dollars in free bets! Get 20% Off and Free Shipping with the code COMPOUND at https://manscaped.com On this week's episode of the Compound Podcast with Ian Happ, All-Star, Gold Glove Award Winner and former MVP Joey Votto joins the show. Joey sits down for a wide ranging 50 minute conversation, touching on everything from playing chess with kids, to finding his approach at the plate that allowed him to win MVP, to Joey's live reaction to finding out his former teammate Scott Rolen had made the hall of fame, and a whole lot more. Stay tuned after the interview for a great story on Ian getting hit by a pitch by Scooter Gennett, and Sloan Screen time. And don't forget to follow The Compound on social media, on Twitter @thecompoundpod, on Instagram @thecompoundpod_ and on TikTok @TheCompoundPod.  Gambling Problem? Call 877-8-HOPENY/text HOPENY (467369) (NY), If you or someone you know has a gambling problem, crisis counseling and referral services can be accessed by calling 1-800- GAMBLER (1-800-426-2537) (CO/IL/IN/LA/MD/MI/NJ/PA/TN/WV/WY), 1-800-NEXT STEP (AZ), 1-800-522-4700 (KS/NH), 888-789-7777/visitccpg.org (CT), 1-800-BETS OFF (IA), visit OPGR.org (OR), or 1-888-532-3500 (VA).21+ (18+ NH/WY). Physically present in AZ/CO/CT/IL/IN/IA/KS/LA (select parishes)/MD/MI/NJ/NY/PA/TN/VA/WV/WY only. Void in OH/ONT. Eligibility restrictions apply. $200 in Free Bets: Valid 1 per new customer. Min. $5 deposit. Min $5 bet. Promo code req. $200 issued as free bets that expire 7 days (168 hours) after being awarded. Free bets must be wagered 1x and stake is not included in any returns or winnings. Stepped up Same Game Parlay: 1 Stepped Up Same Game Parlay Token issued per eligible NFL playoff game after opt-in. Min $1 bet. Max bet limits apply. Min. 3-leg. Each leg min. -300 odds, total bet +100 odds or longer. Profit boosted up to 100% (10+ legs for 100% boost). Promotional offer period ends 2/12/23 at 11:59:59",
+                "duration_ms": 4339722,
+                "explicit": false,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/2k0HRC5ptfSkWPZhm73x2K"
+                },
+                "href": "https://api.spotify.com/v1/episodes/2k0HRC5ptfSkWPZhm73x2K",
+                "html_description": "<p>Download the Draftkings Sportsbook App and use code COMPOUND, new customers who bet 5 dollars can get 200 dollars in free bets!</p><p>Get 20% Off and Free Shipping with the code COMPOUND at <a href=\"https://manscaped.com/\" rel=\"nofollow\">https://manscaped.com</a></p><p>On this week&#39;s episode of the Compound Podcast with Ian Happ, All-Star, Gold Glove Award Winner and former MVP Joey Votto joins the show. Joey sits down for a wide ranging 50 minute conversation, touching on everything from playing chess with kids, to finding his approach at the plate that allowed him to win MVP, to Joey&#39;s live reaction to finding out his former teammate Scott Rolen had made the hall of fame, and a whole lot more. Stay tuned after the interview for a great story on Ian getting hit by a pitch by Scooter Gennett, and Sloan Screen time.</p><p>And don&#39;t forget to follow The Compound on social media, on Twitter &#64;thecompoundpod, on Instagram &#64;thecompoundpod_ and on TikTok &#64;TheCompoundPod.</p><p><br /></p><p>Gambling Problem? Call 877-8-HOPENY/text HOPENY (467369) (NY), If you or someone you know has a gambling problem, crisis counseling and referral services can be accessed by calling 1-800- GAMBLER (1-800-426-2537) (CO/IL/IN/LA/MD/MI/NJ/PA/TN/WV/WY), 1-800-NEXT STEP (AZ), 1-800-522-4700 (KS/NH), 888-789-7777/visitccpg.org (CT), 1-800-BETS OFF (IA), visit OPGR.org (OR), or 1-888-532-3500 (VA).21&#43; (18&#43; NH/WY). Physically present in AZ/CO/CT/IL/IN/IA/KS/LA (select parishes)/MD/MI/NJ/NY/PA/TN/VA/WV/WY only. Void in OH/ONT.</p><p>Eligibility restrictions apply. $200 in Free Bets: Valid 1 per new customer. Min. $5 deposit. Min $5 bet. Promo code req. $200 issued as free bets that expire 7 days (168</p><p>hours) after being awarded. Free bets must be wagered 1x and stake is not included in any returns or winnings. Stepped up Same Game Parlay: 1 Stepped Up Same Game Parlay Token issued per eligible NFL playoff game after opt-in. Min $1 bet. Max bet limits apply. Min. 3-leg. Each leg min. -300 odds, total bet &#43;100 odds or longer. Profit boosted up to 100% (10&#43; legs for 100% boost). Promotional offer period ends 2/12/23 at 11:59:59</p>",
+                "id": "2k0HRC5ptfSkWPZhm73x2K",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6765630000ba8aea69a184dc76e1a31c8719c7",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67656300005f1fea69a184dc76e1a31c8719c7",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab6765630000f68dea69a184dc76e1a31c8719c7",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en-US",
+                "languages": [
+                    "en-US"
+                ],
+                "name": "Joey Votto joins the Compound for an MVP Episode!",
+                "release_date": "2023-01-25",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:2k0HRC5ptfSkWPZhm73x2K"
+            },
+            {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/425a498be86f0d1180b3aca8113bc24649a33925",
+                "description": "Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager  Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!",
+                "duration_ms": 2476355,
+                "explicit": false,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/3qoiD0zdOvt7wQn4TC7s5Z"
+                },
+                "href": "https://api.spotify.com/v1/episodes/3qoiD0zdOvt7wQn4TC7s5Z",
+                "html_description": "<p>Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com</p><p>Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager</p><p><br /></p><p>Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!</p>",
+                "id": "3qoiD0zdOvt7wQn4TC7s5Z",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6765630000ba8ac8c02a14a42c59f592f02ed7",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67656300005f1fc8c02a14a42c59f592f02ed7",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab6765630000f68dc8c02a14a42c59f592f02ed7",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en",
+                "languages": [
+                    "en"
+                ],
+                "name": "Joey Votto went to Brazil to get a tattoo in honor of his dad",
+                "release_date": "2023-01-23",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:3qoiD0zdOvt7wQn4TC7s5Z"
+            },
+            {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/984e0907ff3b3551aedbdad4390eb1d7d6d73b2f",
+                "description": "Mentally prepare yourself for a can't-miss conversation with Cincinnati Reds future Hall-of-Famer Joey Votto on missing the egos like Brandon Phillips and Todd Frazier, dishing out untold stories about his verbal battles with Frazier, and commenting on the recent Toronto trade rumors that popped up. It's 1hr20min into the show and thank us later. Thursday's #FTLive also checks in with NL Rookie of the Year Michael Harris II from literally inside the clubhouse and Braves skipper Brian Snitker strolls over for a cameo. Phillies manager Rob Thomson also swings by with feedback on his Phillies at the WBC and an inside look at owner John Middleton's unforgettable speech at the start of spring training. Scott, Erik and A.J. also fight about the AL Central season outlook and that's what we call a Thursday on FT.   --- Send in a voice message: https://podcasters.spotify.com/pod/show/foulterritory/message Learn more about your ad choices. Visit megaphone.fm/adchoices",
+                "duration_ms": 7978553,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/0xUPNaFZCafSgh39715Ge1"
+                },
+                "href": "https://api.spotify.com/v1/episodes/0xUPNaFZCafSgh39715Ge1",
+                "html_description": "<p>Mentally prepare yourself for a can&#39;t-miss conversation with Cincinnati Reds future Hall-of-Famer Joey Votto on missing the egos like Brandon Phillips and Todd Frazier, dishing out untold stories about his verbal battles with Frazier, and commenting on the recent Toronto trade rumors that popped up. It&#39;s 1hr20min into the show and thank us later.</p><p>Thursday&#39;s #FTLive also checks in with NL Rookie of the Year Michael Harris II from literally inside the clubhouse and Braves skipper Brian Snitker strolls over for a cameo.</p><p>Phillies manager Rob Thomson also swings by with feedback on his Phillies at the WBC and an inside look at owner John Middleton&#39;s unforgettable speech at the start of spring training.</p><p>Scott, Erik and A.J. also fight about the AL Central season outlook and that&#39;s what we call a Thursday on FT.</p><p><br /></p><p><br /></p><p>--- Send in a voice message: https://podcasters.spotify.com/pod/show/foulterritory/message</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://megaphone.fm/adchoices\" rel=\"nofollow\">megaphone.fm/adchoices</a></p>",
+                "id": "0xUPNaFZCafSgh39715Ge1",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6765630000ba8a2b77f5b911d076abc45cb489",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67656300005f1f2b77f5b911d076abc45cb489",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab6765630000f68d2b77f5b911d076abc45cb489",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en",
+                "languages": [
+                    "en"
+                ],
+                "name": "Joey Votto's BEEF with Todd Frazier, Michael Harris II is LIVE from the clubhouse, Rob Thomson on his owner's FIRE speech",
+                "release_date": "2023-03-23",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:0xUPNaFZCafSgh39715Ge1"
+            },
+            {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/8f7978a06a46e2e3c3f928dfb75f3ef95213d125",
+                "description": "On Wednesday, December 12th, 2007, 47-year-old Nancy and her 7-year-old Joey Bochicchio left the Boca Raton Town Center Mall after doing some Christmas shopping. Surveillance video showed the two girls leaving the mall, with everything appearing to be normal. However, several hours later, Nancy’s SUV was spotted in a back parking lot of the mall, still running, after the mall had closed. Inside, police found Nancy and Joey, bound and executed. The investigation that followed revealed that these two murders may not have been random at all, that they could’ve been another attack committed by a still-unknown serial killer.  TRIGGER WARNINGS: murder, child murder, abduction  Hang with us:   Follow Us on Instagram Like Us on Facebook Join our Case Discussion Group on Facebook Get Killer Queens Merch Bonus Episodes  Support Our AMAZING Sponsors:   Betterhelp: When you want to be a better problem solver, therapy can get you there. Visit BetterHelp.com/queens today to get 10% off your first month.  Simplisafe: Customize the perfect system for your home in just a few minutes at SIMPLISAFE.com/killerqueens. Go today and claim a free indoor security camera plus 20% off with Interactive Monitoring.  © 2022 Killer Queens Podcast. All Rights Reserved Audio Production by Wayfare Recording Music provided by Steven Tobi Logo designed by Sloane Williams of The Sophisticated Crayon ",
+                "duration_ms": 3145273,
+                "explicit": false,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/02JhRMePIqprnH4S3QymR0"
+                },
+                "href": "https://api.spotify.com/v1/episodes/02JhRMePIqprnH4S3QymR0",
+                "html_description": "On Wednesday, December 12th, 2007, 47-year-old Nancy and her 7-year-old Joey Bochicchio left the Boca Raton Town Center Mall after doing some Christmas shopping. Surveillance video showed the two girls leaving the mall, with everything appearing to be normal. However, several hours later, Nancy’s SUV was spotted in a back parking lot of the mall, still running, after the mall had closed. Inside, police found Nancy and Joey, bound and executed. The investigation that followed revealed that these two murders may not have been random at all, that they could’ve been another attack committed by a still-unknown serial killer.<br /><br/><br /><br/>TRIGGER WARNINGS: murder, child murder, abduction<br /><br/><br /><br/>Hang with us:<br/><ul><li>Follow Us on Instagram</li><li><a href=\"https://www.facebook.com/killerqueenspod/\" rel=\"nofollow\">Like Us on Facebook</a></li><li><a href=\"https://www.facebook.com/groups/killerqueensgroup/\" rel=\"nofollow\">Join our Case Discussion Group on Facebook</a></li><li><a href=\"https://www.killerqueenspodcast.com/shop/\" rel=\"nofollow\">Get Killer Queens Merch</a></li><li>Bonus Episodes</li></ul><br/>Support Our AMAZING Sponsors:<br/><ul><li><br/>Betterhelp: When you want to be a better problem solver, therapy can get you there. Visit <a href=\"https://www.betterhelp.com/queens\" rel=\"nofollow\"></a>BetterHelp.com/queens today to get 10% off your first month.</li><li><br/>Simplisafe: Customize the perfect system for your home in just a few minutes at <a href=\"https://www.simplisafe.com/killerqueens\" rel=\"nofollow\"></a>SIMPLISAFE.com/killerqueens. Go today and claim a free indoor security camera plus 20% off with Interactive Monitoring.</li></ul><br/>© 2022<a href=\"https://www.killerqueenspodcast.com/\" rel=\"nofollow\"> Killer Queens Podcast</a>. All Rights Reserved<br /><br/>Audio Production by <a href=\"https://www.wayfarerecording.com/\" rel=\"nofollow\">Wayfare Recording</a><br /><br/>Music provided by<a href=\"https://soundcloud.com/stobi_tnd\" rel=\"nofollow\"> Steven Tobi</a><br /><br/>Logo designed by<a href=\"https://www.etsy.com/shop/SophisticatedCrayon\" rel=\"nofollow\"> Sloane Williams of The Sophisticated Crayon</a><br/>",
+                "id": "02JhRMePIqprnH4S3QymR0",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6765630000ba8aad6bf1d8a5da2ac6bae963c9",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67656300005f1fad6bf1d8a5da2ac6bae963c9",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab6765630000f68dad6bf1d8a5da2ac6bae963c9",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en",
+                "languages": [
+                    "en"
+                ],
+                "name": "233: The Mall Murders (Nancy and Joey Bochicchio)",
+                "release_date": "2022-09-06",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:02JhRMePIqprnH4S3QymR0"
+            },
+            {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/c48410eadbcf08c510cff9df22d2c98478aa947e",
+                "description": "In this episode: Adults in Diapers • Woman Who Married A Tree • Reading Machine Gun Kelly's Tweets • Serial Killer Obsession • Clown Surgery Regret • Moms with OnlyFans Accounts • Paris Garbage Strike • Fan Mail / Artist Showcase  ---   Support this podcast: https://podcasters.spotify.com/pod/show/joeybvstheworld/support",
+                "duration_ms": 1213271,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/4NXQyFdsYkJH2ASRJfysXL"
+                },
+                "href": "https://api.spotify.com/v1/episodes/4NXQyFdsYkJH2ASRJfysXL",
+                "html_description": "<p>In this episode: Adults in Diapers • Woman Who Married A Tree • Reading Machine Gun Kelly&#39;s Tweets • Serial Killer Obsession • Clown Surgery Regret • Moms with OnlyFans Accounts • Paris Garbage Strike • Fan Mail / Artist Showcase</p><br/>--- <br/>Support this podcast: <a href=\"https://podcasters.spotify.com/pod/show/joeybvstheworld/support\" rel=\"nofollow\">https://podcasters.spotify.com/pod/show/joeybvstheworld/support</a>",
+                "id": "4NXQyFdsYkJH2ASRJfysXL",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/d8257f4fdec9a137509a8149bc5692934d6558b5",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/1c640e44dcd8e6c0bc43099d5f0fd480881f15b9",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/0685995d6cba894006bc796731408910dfaabb56",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en",
+                "languages": [
+                    "en"
+                ],
+                "name": "It's a Mad World",
+                "release_date": "2023-03-31",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:4NXQyFdsYkJH2ASRJfysXL"
+            }
+        ],
+        "limit": 5,
+        "next": "https://api.spotify.com/v1/search?query=Joey+Votto&type=episode&market=US&locale=en-US%2Cen%3Bq%3D0.9&offset=5&limit=5",
+        "offset": 0,
+        "previous": null,
+        "total": 313
     }
-]
+}

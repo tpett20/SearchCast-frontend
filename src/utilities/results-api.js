@@ -31,7 +31,7 @@ export async function searchSpotifyAPI(input) {
 
     const spotifyToken = getSpotifyToken()
     console.log('Search Spotify - Token', spotifyToken)
-    const apiURL = `https://api.spotify.com/v1/search?q=${input}&type=episode&limit=5`
+    const apiURL = `https://api.spotify.com/v1/search?q=${input}&type=episode&market=US&limit=5`
 
     try {
         const response = await axios.get(apiURL, {
@@ -39,8 +39,7 @@ export async function searchSpotifyAPI(input) {
                 'Authorization': `Bearer ${spotifyToken}`
             }
         })
-        console.log(response)
-        return response.data
+        return response.data.episodes.items
     } catch (err) {
         console.log(err)
     }

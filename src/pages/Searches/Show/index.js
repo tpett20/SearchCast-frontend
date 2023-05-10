@@ -12,6 +12,7 @@ export default function SearchesShow() {
     const handleRequest = async () => {
         try {
             const searchData = await getSearch(id)
+            // const resultsData = await searchSpotify('Joey+Votto')
             const resultsData = await searchSpotify(searchData.input)
             setSearch(searchData)
             setResults(resultsData)
@@ -28,15 +29,16 @@ export default function SearchesShow() {
     const loaded = () => {
         return (
             <>
-                <p>{search.input}</p>
-                <p>{search._id}</p>
-                <ul>
+                <h2>{search.input}, {search._id}</h2>
                 {results.map((r, idx)=> {
                     return (
-                    <li key={idx}><span style={{fontWeight: 'bold'}}>{r.name}</span>: {r.description}</li>
+                    <div key={idx}>
+                        <img src={r.images[2].url} alt={r.name}/>
+                        <p>{r.release_date} <span style={{fontWeight: 'bold'}}>{r.name}</span></p>
+                        <p><a href={r.external_urls.spotify} target="_blank" rel="noopener noreferrer">Listen on Spotify</a></p>
+                    </div>
                     )
                 })}
-                </ul>
             </>
         )
     }
