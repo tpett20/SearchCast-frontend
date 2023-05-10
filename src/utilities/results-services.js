@@ -9,3 +9,14 @@ export async function accessSpotify() {
         throw new Error(err)
     }
 }
+
+export async function searchSpotify(input) {
+    try {
+        // const data = await resultsAPI.searchSpotifyAPI(input)
+        const data = await fetch('../sampleData.json').then(response => response.json())
+        return data
+    } catch (err) {
+        console.log(err)
+        throw new Error(err)
+    }
+}
