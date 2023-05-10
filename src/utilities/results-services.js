@@ -2,7 +2,7 @@ import * as resultsAPI from './results-api'
 
 export async function accessSpotify() {
     try {
-        const spotifyToken = await resultsAPI.getSpotifyToken()
+        const spotifyToken = await resultsAPI.requestSpotifyToken()
         return spotifyToken
     } catch (err) {
         console.log(err)

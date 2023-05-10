@@ -8,7 +8,7 @@ const tokenURL = 'https://accounts.spotify.com/api/token'
 const credentials = Buffer.from(`${clientId}:${clientSecret}`, 'utf-8').toString('base64')
 const data = qs.stringify({'grant_type':'client_credentials'})
 
-export async function getSpotifyToken() {
+export async function requestSpotifyToken() {
     try {
         const response = await axios.post(tokenURL, data, {
             headers: {
@@ -22,7 +22,4 @@ export async function getSpotifyToken() {
         console.log(err)
     }
 }
-
 // Code Assistance: https://ritvikbiswas.medium.com/connecting-to-the-spotify-api-using-node-js-and-axios-client-credentials-flow-c769e2bee818
-
-// BQDg3JBitIHJgQyMzwioeUwWTa6iSsYH-wVEA7_AAdQ8XY59XL23WMuFlOugqslu0siuKSfKoL22iapdSNqs1SmAPItXgYqpa8H6QiI2YbdPDzZoF_n3
