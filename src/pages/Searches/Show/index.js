@@ -30,11 +30,11 @@ export default function SearchesShow() {
     const loaded = () => {
         return (
             <>
-                <h2>{search.input}, {search._id}</h2>
+                <h2>{search.input}</h2>
                 {results.map((r, idx)=> {
                     return (
                     <div key={idx}>
-                        <img src={r.images[2].url} alt={r.name}/>
+                        <img src={r.images[1].url} alt={r.name}/>
                         <p>{r.release_date} <span style={{fontWeight: 'bold'}}>{r.name}</span></p>
                         <p><a href={r.external_urls.spotify} target="_blank" rel="noopener noreferrer">Listen on Spotify</a></p>
                     </div>

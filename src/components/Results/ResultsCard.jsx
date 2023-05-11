@@ -26,19 +26,22 @@ export default function ResultsCard({search}) {
 
     const loaded = () => {
         return (
-            <div>
-                <Link to={`/searches/${search._id}`}>
-                    <p>{search.input}</p>
-                </Link>
-                <div>
-                    {results?.map((r, idx) => {
-                        return (
-                            <div key={idx}>
-                                {/* <img src={r.images[2].url} alt={r.name}/> */}
-                                <p>{r.name}</p>
-                            </div>
-                        )
-                    })}
+            <div className="col-6">
+                <div className="card mb-3">
+                    <div className="card-header bg-secondary-subtle">
+                        <Link to={`/searches/${search._id}`}>
+                            {search.input}
+                        </Link>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                        {results?.map((r, idx) => {
+                            return (
+                                <li key={idx} className="list-group-item text-truncate">
+                                    {idx+1}. {r.name}
+                                </li>
+                            )
+                        })}
+                    </ul>
                 </div>
             </div>
         )

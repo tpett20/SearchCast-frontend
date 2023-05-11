@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
-import { accessSpotify } from "../../../utilities/results-services"
 import ResultsCard from "../../../components/Results/ResultsCard"
 
 export default function SearchesIndex() {
@@ -24,13 +23,15 @@ export default function SearchesIndex() {
     }, [isLoading])
 
     const loaded = () => {
-        return searches?.map(search => {
-            return (
-                <div key={search._id}>
-                    <ResultsCard search={search}/>
-                </div>
-            )
-        })
+        return (
+            <div className="row">
+                {searches?.map(search => {
+                    return (
+                        <ResultsCard search={search} key={search._id} />
+                    )
+                })}
+            </div>
+        )
     }
 
     const handleChange = (evt) => {
@@ -50,19 +51,20 @@ export default function SearchesIndex() {
 
     return (
         <section>
-            <h1>Add a Search</h1>
-            <form onSubmit={handleSubmit}>
-                <input
-                    value={newForm.input}
-                    onChange={handleChange}
-                    type="text"
-                    name="input"
-                    placeholder="Enter your search..."
-                />
-                <button>Add Search</button>
-            </form>
-            <button onClick={accessSpotify}>Access Spotify!</button>
-            <h1>Searches - Index</h1>
+            <div className="col-6">
+                <form onSubmit={handleSubmit} className="input-group my-3">
+                    <input
+                        value={newForm.input}
+                        onChange={handleChange}
+                        type="text"
+                        name="input"
+                        placeholder="Add a search!"
+                        className="form-control"
+                    />
+                    <button className="btn btn-outline-secondary">Add</button>
+                </form>
+            </div>
+            <h1 className="mb-3">Welcome to SearchCast!</h1>
             {isLoading ? <p>Loading</p> : loaded()}
         </section>
     )

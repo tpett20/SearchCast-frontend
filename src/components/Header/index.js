@@ -2,13 +2,12 @@ import { Link } from "react-router-dom"
 
 export default function Header() {
     return (
-        <header>
-            <h1>SearchCast</h1>
-            <ul>
-                <Link to='/'>
-                    <li>Home</li>
+        <nav className="navbar bg-dark-subtle rounded mt-2">
+            <div className="container-fluid">
+                <Link to='/' className="navbar-brand text-dark">
+                    🎙️🔍 SearchCast
                 </Link>
-            </ul>
-        </header>
+            </div>
+        </nav>
     )
 }

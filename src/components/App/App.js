@@ -33,7 +33,7 @@ function App() {
     }, [])
 
     return (
-        <div className="App">
+        <div className="App container">
             <SpotifyToken value={{
                 currentSpotifyToken, 
                 setCurrentSpotifyToken
