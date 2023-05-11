@@ -1,7 +1,8 @@
 import './App.css';
 import { useState, useEffect, useContext } from 'react';
 import { SpotifyContext } from '../../data';
-import { getSpotifyToken, setSpotifyToken } from '../../utilities/spotifyToken';
+import { getSpotifyToken, setSpotifyToken, clearSpotifyToken } from '../../utilities/spotifyToken';
+import { setSpotifyTokenTimer, checkSpotifyTokenTimer, clearSpotifyTokenTimer } from '../../utilities/SpotifyTokenTimer';
 import { accessSpotify } from '../../utilities/results-services';
 
 import Header from '../Header';
@@ -15,13 +16,30 @@ function App() {
 
     const establishSpotifyConnection = async () => {
         const localToken = getSpotifyToken()
-        if (localToken) {
+        const timerStatus = checkSpotifyTokenTimer()
+        if (localToken && timerStatus) {
             setCurrentSpotifyToken(localToken)
-        } else {
+        } 
+        else if (localToken) {
+            // localToken exists, but timer has expired
+            console.log('hitting expired timer')
+            clearSpotifyToken()
+            clearSpotifyTokenTimer()
+            try {
+                const newToken = await accessSpotify()
+                setSpotifyToken(newToken)
+                setSpotifyTokenTimer()
+            } catch (err) {
+                console.log(err)
+            }
+        }
+        else {
+            // no localToken exists
             try {
                 const newToken = await accessSpotify()
                 setCurrentSpotifyToken(newToken)
                 setSpotifyToken(newToken)
+                setSpotifyTokenTimer()
             } catch (err) {
                 console.log(err)
             }
