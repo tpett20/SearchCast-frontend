@@ -1,7 +1,7 @@
 const checkSpotifyTokenTimer = () => {
     const now = Date.now()
     const timer = localStorage.getItem('spotifyTokenTimer')
-    console.log('spotifyTokenTimer', now, timer)
+    console.log('spotifyTokenTimer:', timer > now ? 'Valid' : 'Expired')
     return timer > now ? true : false
 }
 
