@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
 import ResultsCard from "../../../components/Results/ResultsCard"
+import TestUser from "../../../components/Auth/TestUser"
 
 export default function SearchesIndex() {
     const [searches, setSearches] = useState([])
@@ -64,6 +65,7 @@ export default function SearchesIndex() {
                     <button className="btn btn-outline-secondary">Add</button>
                 </form>
             </div>
+            <TestUser />
             <h1 className="mb-3">Welcome to SearchCast!</h1>
             {isLoading ? <p>Loading</p> : loaded()}
         </section>
