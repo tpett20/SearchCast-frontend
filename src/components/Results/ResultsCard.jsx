@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { searchSpotify } from "../../utilities/results-services"
 import { limitResults } from "../../utilities/spotifyResults"
+import DeleteButton from "../DeleteButton/DeleteButton"
 
 export default function ResultsCard({search}) {
     const [results, setResults] = useState(null)
@@ -32,6 +33,7 @@ export default function ResultsCard({search}) {
                         <Link to={`/searches/${search._id}`}>
                             {search.input}
                         </Link>
+                        <DeleteButton/> 
                     </div>
                     <ul className="list-group list-group-flush">
                         {results?.map((r, idx) => {

@@ -29,3 +29,13 @@ export async function getSearch(id) {
         throw new Error(err)
     }
 }
+
+export async function deleteSearch(id) {
+    try {
+        const deletedSearch = await searchesAPI.destroy(id)
+        return deletedSearch
+    } catch (err) {
+        console.log(err)
+        throw new Error(err)
+    }
+}
