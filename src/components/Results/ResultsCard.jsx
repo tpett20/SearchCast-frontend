@@ -4,7 +4,7 @@ import { searchSpotify } from "../../utilities/results-services"
 import { limitResults } from "../../utilities/spotifyResults"
 import DeleteButton from "../DeleteButton/DeleteButton"
 
-export default function ResultsCard({search}) {
+export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
     const [results, setResults] = useState(null)
     const [isLoading, setIsLoading] = useState(true)
 
@@ -36,7 +36,7 @@ export default function ResultsCard({search}) {
                             </Link>
                         </div>
                         <div className="d-inline-flex">
-                            <DeleteButton/> 
+                            <DeleteButton id={search._id} setIndexLoading={setIndexLoading}/> 
                         </div>
                     </div>
                     <ul className="list-group list-group-flush">

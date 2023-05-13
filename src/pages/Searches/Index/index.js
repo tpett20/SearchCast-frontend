@@ -37,7 +37,7 @@ export default function SearchesIndex() {
             <div className="row">
                 {searches?.map(search => {
                     return (
-                        <ResultsCard search={search} key={search._id} />
+                        <ResultsCard search={search} key={search._id} setIsLoading={setIsLoading} />
                     )
                 })}
             </div>
