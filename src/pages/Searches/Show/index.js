@@ -30,7 +30,7 @@ export default function SearchesShow() {
     const loaded = () => {
         return (
             <>
-                <h1 className="my-3">Search Results for <span className="fw-bold text-primary">{search.input}</span></h1>
+                <h1 className="my-3">Search Results for <span className="fw-bold text-emphasis-dark">{search.input}</span></h1>
                 <div className="row">
                 {results.map((r, idx)=> {
                     return (

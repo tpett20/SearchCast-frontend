@@ -4,8 +4,8 @@ export default function LoginButton() {
     const { loginWithRedirect, isAuthenticated } = useAuth0()
 
     return isAuthenticated ? <></> : (
-        <button onClick={() => loginWithRedirect()} className="btn btn-primary">
-            Log In / Sign Up
+        <button onClick={() => loginWithRedirect()} className="btn btn-dark">
+            Login
         </button>
     )
 }

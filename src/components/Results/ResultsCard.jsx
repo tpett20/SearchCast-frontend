@@ -28,10 +28,10 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
     const loaded = () => {
         return (
             <div className="col-12 col-md-6 col-lg-4">
-                <div className="card mb-3">
-                    <div className="card-header bg-secondary-subtle d-flex justify-content-between">
+                <div className="card text-bg-dark mb-3">
+                    <div className="card-header d-flex justify-content-between">
                         <div className="d-inline-flex">
-                            <Link to={`/searches/${search._id}`} className="link-offset-1 fs-5">
+                            <Link to={`/searches/${search._id}`} className="link-offset-1 link-light link-underline-opacity-75 link-underline-opacity-100-hover fs-5">
                                 {search.input}
                             </Link>
                         </div>
