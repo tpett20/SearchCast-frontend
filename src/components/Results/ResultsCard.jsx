@@ -31,7 +31,7 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
                 <div className="card mb-3">
                     <div className="card-header bg-secondary-subtle d-flex justify-content-between">
                         <div className="d-inline-flex">
-                            <Link to={`/searches/${search._id}`}>
+                            <Link to={`/searches/${search._id}`} className="link-offset-1 fs-5">
                                 {search.input}
                             </Link>
                         </div>

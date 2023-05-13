@@ -32,7 +32,7 @@ export async function searchSpotifyAPI(input) {
     const convertedInput = convertInput(input)
     const spotifyToken = getSpotifyToken()
     console.log('Search Spotify - Token', spotifyToken)
-    const apiURL = `https://api.spotify.com/v1/search?q=${convertedInput}&type=episode&market=US&limit=10`
+    const apiURL = `https://api.spotify.com/v1/search?q=${convertedInput}&type=episode&market=US&limit=30`
 
     try {
         const response = await axios.get(apiURL, {

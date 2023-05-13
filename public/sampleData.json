@@ -201,6 +201,125 @@
                 "release_date_precision": "day",
                 "type": "episode",
                 "uri": "spotify:episode:4NXQyFdsYkJH2ASRJfysXL"
+            }, {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/425a498be86f0d1180b3aca8113bc24649a33925",
+                "description": "Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager  Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!",
+                "duration_ms": 2476355,
+                "explicit": false,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/3qoiD0zdOvt7wQn4TC7s5Z"
+                },
+                "href": "https://api.spotify.com/v1/episodes/3qoiD0zdOvt7wQn4TC7s5Z",
+                "html_description": "<p>Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com</p><p>Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager</p><p><br /></p><p>Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!</p>",
+                "id": "3qoiD0zdOvt7wQn4TC7s5Z",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6765630000ba8ac8c02a14a42c59f592f02ed7",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67656300005f1fc8c02a14a42c59f592f02ed7",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab6765630000f68dc8c02a14a42c59f592f02ed7",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en",
+                "languages": [
+                    "en"
+                ],
+                "name": "Joey Votto went to Brazil to get a tattoo in honor of his dad",
+                "release_date": "2023-01-23",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:3qoiD0zdOvt7wQn4TC7s5Z"
+            }, 
+            {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/425a498be86f0d1180b3aca8113bc24649a33925",
+                "description": "Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager  Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!",
+                "duration_ms": 2476355,
+                "explicit": false,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/3qoiD0zdOvt7wQn4TC7s5Z"
+                },
+                "href": "https://api.spotify.com/v1/episodes/3qoiD0zdOvt7wQn4TC7s5Z",
+                "html_description": "<p>Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com</p><p>Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager</p><p><br /></p><p>Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!</p>",
+                "id": "3qoiD0zdOvt7wQn4TC7s5Z",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6765630000ba8ac8c02a14a42c59f592f02ed7",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67656300005f1fc8c02a14a42c59f592f02ed7",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab6765630000f68dc8c02a14a42c59f592f02ed7",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en",
+                "languages": [
+                    "en"
+                ],
+                "name": "Joey Votto went to Brazil to get a tattoo in honor of his dad",
+                "release_date": "2023-01-23",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:3qoiD0zdOvt7wQn4TC7s5Z"
+            },
+            {
+                "audio_preview_url": "https://p.scdn.co/mp3-preview/425a498be86f0d1180b3aca8113bc24649a33925",
+                "description": "Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager  Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!",
+                "duration_ms": 2476355,
+                "explicit": false,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/episode/3qoiD0zdOvt7wQn4TC7s5Z"
+                },
+                "href": "https://api.spotify.com/v1/episodes/3qoiD0zdOvt7wQn4TC7s5Z",
+                "html_description": "<p>Get 20% Off and Free Shipping with the code ROSE at https://www.Manscaped.com</p><p>Sign up for Draftkings Sportsbook with code ROSE and get $200 in free bets after you place a $5 wager</p><p><br /></p><p>Cincinnati Reds first baseman Joey Votto talks about playing in chess league, meeting Gary Kasparov, traveling to Brazil for a tattoo, almost going to the World Cup, his shoulder surgery, his interaction with fans, taking in a Reds game from the stands and more!</p>",
+                "id": "3qoiD0zdOvt7wQn4TC7s5Z",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6765630000ba8ac8c02a14a42c59f592f02ed7",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67656300005f1fc8c02a14a42c59f592f02ed7",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab6765630000f68dc8c02a14a42c59f592f02ed7",
+                        "width": 64
+                    }
+                ],
+                "is_externally_hosted": false,
+                "is_playable": true,
+                "language": "en",
+                "languages": [
+                    "en"
+                ],
+                "name": "Joey Votto went to Brazil to get a tattoo in honor of his dad",
+                "release_date": "2023-01-23",
+                "release_date_precision": "day",
+                "type": "episode",
+                "uri": "spotify:episode:3qoiD0zdOvt7wQn4TC7s5Z"
             }
         ],
         "limit": 5,

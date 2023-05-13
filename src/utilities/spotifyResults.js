@@ -3,7 +3,7 @@ const limitResults = (results) => {
 }
 
 function cleanResults(results, input) {
-    return results.filter(r => r.description.includes(input)).slice(0,5)
+    return results.filter(r => r.description.includes(input)).slice(0,8)
 }
 
 function convertInput(input) {
