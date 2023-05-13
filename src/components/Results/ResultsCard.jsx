@@ -29,11 +29,15 @@ export default function ResultsCard({search}) {
         return (
             <div className="col-6">
                 <div className="card mb-3">
-                    <div className="card-header bg-secondary-subtle">
-                        <Link to={`/searches/${search._id}`}>
-                            {search.input}
-                        </Link>
-                        <DeleteButton/> 
+                    <div className="card-header bg-secondary-subtle d-flex justify-content-between">
+                        <div className="d-inline-flex">
+                            <Link to={`/searches/${search._id}`}>
+                                {search.input}
+                            </Link>
+                        </div>
+                        <div className="d-inline-flex">
+                            <DeleteButton/> 
+                        </div>
                     </div>
                     <ul className="list-group list-group-flush">
                         {results?.map((r, idx) => {

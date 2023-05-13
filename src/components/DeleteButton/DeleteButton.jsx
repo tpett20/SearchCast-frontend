@@ -1,5 +1,6 @@
 import { deleteSearch } from "../../utilities/searches-services"
 import { useParams, useNavigate } from "react-router"
+import './DeleteButton.css'
 
 export default function DeleteButton() {
     const {id} = useParams()
@@ -22,8 +23,8 @@ export default function DeleteButton() {
     }
 
     return (
-        <button onClick={() => handleDeleteSearch(id)} className="btn ms-5">
-            🚫
+        <button onClick={() => handleDeleteSearch(id)} className="btn p-0 DeleteButton">
+            ❌
         </button>
     )
 }

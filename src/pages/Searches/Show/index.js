@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import { useParams } from "react-router"
 import { getSearch } from "../../../utilities/searches-services"
 import { searchSpotify } from "../../../utilities/results-services"
-import DeleteButton from "../../../components/DeleteButton/DeleteButton"
 
 export default function SearchesShow() {
     const { id } = useParams()
@@ -41,7 +40,6 @@ export default function SearchesShow() {
                     </div>
                     )
                 })}
-                <DeleteButton/>
             </>
         )
     }
