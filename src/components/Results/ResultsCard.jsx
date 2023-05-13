@@ -27,7 +27,7 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
 
     const loaded = () => {
         return (
-            <div className="col-6">
+            <div className="col-12 col-md-6 col-lg-4">
                 <div className="card mb-3">
                     <div className="card-header bg-secondary-subtle d-flex justify-content-between">
                         <div className="d-inline-flex">
@@ -43,7 +43,7 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
                         {results?.map((r, idx) => {
                             return (
                                 <li key={idx} className="list-group-item text-truncate">
-                                    {idx+1}. {r.name}
+                                    <img src={r.images[2].url} alt={r.name}/> {idx+1}. {r.name}
                                 </li>
                             )
                         })}

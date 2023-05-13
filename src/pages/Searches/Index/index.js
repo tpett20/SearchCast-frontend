@@ -46,8 +46,8 @@ export default function SearchesIndex() {
 
     return (
         <section>
+            <h1 className="my-3">Welcome to SearchCast!</h1>
             <SearchForm setIsLoading={setIsLoading}/>
-            <h1 className="mb-3">Welcome to SearchCast!</h1>
             {isLoading ? <p>Loading</p> : loaded()}
         </section>
     )
