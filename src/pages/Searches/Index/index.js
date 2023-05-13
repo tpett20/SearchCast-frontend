@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
 import ResultsCard from "../../../components/Results/ResultsCard"
 import SearchForm from "../../../components/SearchForm/SearchForm"
+import Introduction from "../../../components/Introduction/Introduction"
 import { useAuth0 } from "@auth0/auth0-react"
 
 export default function SearchesIndex() {
@@ -46,7 +47,7 @@ export default function SearchesIndex() {
 
     return (
         <section>
-            <h1 className="my-3">Welcome to SearchCast!</h1>
+            <Introduction/>
             <SearchForm setIsLoading={setIsLoading}/>
             {isLoading ? <p>Loading</p> : loaded()}
         </section>
