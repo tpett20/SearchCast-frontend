@@ -30,16 +30,29 @@ export default function SearchesShow() {
     const loaded = () => {
         return (
             <>
-                <h2>{search.input}</h2>
+                <h2 className="my-3">{search.input}</h2>
+                <div className="row">
                 {results.map((r, idx)=> {
                     return (
-                    <div key={idx}>
-                        <img src={r.images[1].url} alt={r.name}/>
-                        <p>{r.release_date} <span style={{fontWeight: 'bold'}}>{r.name}</span></p>
-                        <p><a href={r.external_urls.spotify} target="_blank" rel="noopener noreferrer">Listen on Spotify</a></p>
+                    <div key={idx} className="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div className="card h-100">
+                            <img src={r.images[1].url} alt={r.name} className="card-img-top"/>
+                            <div className="card-body d-flex flex-column justify-content-between">
+                                <h5 className="card-title">
+                                    {r.name}
+                                </h5>
+                                <div className="d-flex justify-content-center">
+                                    <a href={r.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="btn btn-success">Listen on Spotify</a>
+                                </div>
+                            </div>
+                            <div className="card-footer">
+                                Release Date: {r.release_date}
+                            </div>
+                        </div>
                     </div>
                     )
                 })}
+                </div>
             </>
         )
     }
