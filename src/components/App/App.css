@@ -8,5 +8,6 @@
 body {
     background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) no-repeat center center fixed;
     background-size: cover;
-    /* Source: 043 New York from https://webgradients.com/ */
+    /* Source for Gradient: 043 New York from https://webgradients.com/ */
+    /* Source for Positioning: https://css-tricks.com/perfect-full-page-background-image/ */
 }
