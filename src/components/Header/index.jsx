@@ -5,12 +5,12 @@ import './Header.css'
 
 export default function Header() {
     return (
-        <nav className="navbar bg-transparent rounded mt-2">
-            <div className="container-fluid p-0">
-                <Link to='/' className="navbar-brand text-dark HeaderText p-0 mt-2">
-                    🎙️🔍 SearchCast
+        <nav className="navbar bg-transparent rounded mt-1">
+            <div className="container-fluid p-1">
+                <Link to='/' className="navbar-brand text-dark">
+                    <span className="HeaderText">🎙️🔍 SearchCast</span>
                 </Link>
-                <div className="d-flex">
+                <div>
                     <LoginButton />
                     <LogoutButton />
                 </div>

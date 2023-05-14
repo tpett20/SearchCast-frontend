@@ -20,7 +20,7 @@ export default function SearchesIndex() {
                 setSearches(filteredSearches)
                 setIsLoading(false)
             } else {
-                const filteredSearches = apiResponse.filter(s => s.user === undefined)
+                const filteredSearches = apiResponse.filter(s => s.user === process.env.REACT_APP_AUTH0_ADMIN_ID)
                 setSearches(filteredSearches)
                 setIsLoading(false)
             }
