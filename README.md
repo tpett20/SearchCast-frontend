@@ -7,7 +7,9 @@
 
 ## Technologies Used (Frontend)
 
-React, Spotify Web API, Auth0, Netlify, Bootstrap, JavaScript, HTML, CSS
+Frontend: React, Spotify Web API, Auth0, Netlify, Bootstrap, JavaScript, HTML, CSS
+
+Backend: Node.js, Express.js, MongoDB, Mongoose, JavaScript
 
 
 ## Try It Out! 
