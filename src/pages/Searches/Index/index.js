@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { getSearches, createSearch } from '../../../utilities/searches-services'
 import ResultsCard from "../../../components/Results/ResultsCard"
+import ResultsCardLoad from "../../../components/Results/ResultsCardLoad"
 import SearchForm from "../../../components/SearchForm/SearchForm"
 import Introduction from "../../../components/Introduction/Introduction"
 import { useAuth0 } from "@auth0/auth0-react"
@@ -45,11 +46,21 @@ export default function SearchesIndex() {
         )
     }
 
+    const loading = () => {
+        return (
+            <div className="row">
+                <ResultsCardLoad/>
+                <ResultsCardLoad/>
+                <ResultsCardLoad/>
+            </div>
+            )
+    }
+
     return (
         <section>
             <Introduction/>
             <SearchForm setIsLoading={setIsLoading}/>
-            {isLoading ? <p>Loading</p> : loaded()}
+            {isLoading ? loading() : loaded()}
         </section>
     )
 }

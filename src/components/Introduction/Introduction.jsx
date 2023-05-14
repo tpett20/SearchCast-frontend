@@ -25,7 +25,8 @@ export default function Introduction() {
     else {
         return (
             <div>
-                <h1>Loading...</h1>
+                <h1 className="mb-3">Loading...</h1>
+                <h4 className="my-3">...</h4>
             </div>
         )
     }
