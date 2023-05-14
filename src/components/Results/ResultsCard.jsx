@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { searchSpotify } from "../../utilities/results-services"
 import { limitResults } from "../../utilities/spotifyResults"
 import DeleteButton from "../DeleteButton/DeleteButton"
+import ResultsCardLoad from "./ResultsCardLoad"
 
 export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
     const [results, setResults] = useState(null)
@@ -10,7 +11,6 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
 
     const handleRequest = async () => {
         try {
-            // const resultsData = await searchSpotify('Joey Votto')
             const resultsData = await searchSpotify(search.input)
             const shortenedData = limitResults(resultsData)
             setResults(shortenedData)
@@ -40,13 +40,19 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
                         </div>
                     </div>
                     <ul className="list-group list-group-flush">
-                        {results?.map((r, idx) => {
+                        {results.length ? results.map((r, idx) => {
                             return (
                                 <li key={idx} className="list-group-item text-truncate">
                                     <img src={r.images[2].url} alt={r.name}/> {idx+1}. {r.name}
                                 </li>
                             )
-                        })}
+                        }) : 
+                            <>
+                                <li className="list-group-item fw-bold"><span className="fs-5">🤔</span> This search didn't turn up any results.</li>
+                                <li className="list-group-item">Note that searches are case sensitive, so be sure to type your search as it would most likely appear in a podcast description. <br/>
+                                For example, use "Dolly Parton" rather than "dolly parton" or "software engineering" rather than "Software Engineering."</li>
+                            </>
+                        }
                     </ul>
                 </div>
             </div>
@@ -54,6 +60,6 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
     }
 
     return (
-        isLoading ? <p>Loading</p> : loaded()
+        isLoading ? <ResultsCardLoad/> : loaded()
     )
 }
