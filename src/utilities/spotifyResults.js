@@ -1,9 +1,11 @@
 const limitResults = (results) => {
-    return results.slice(0,3)
+    return results.slice(0, 3)
 }
 
 function cleanResults(results, input) {
-    return results.filter(r => r.description.includes(input)).slice(0,8)
+    // filters results to only include them if their descriptions includes the input
+    // then returns only 8 results for now to limit page size. 
+    return results.filter(r => r.description.includes(input)).slice(0, 8)
 }
 
 function convertInput(input) {
@@ -19,4 +21,4 @@ function convertInput(input) {
     return newString
 }
 
-export {limitResults, cleanResults, convertInput}
+export { limitResults, cleanResults, convertInput }

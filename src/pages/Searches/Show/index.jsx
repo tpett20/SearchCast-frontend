@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react"
-import { useParams } from "react-router"
+import ResultsCardShow from "../../../components/Results/ResultsCardShow"
 import { getSearch } from "../../../utilities/searches-services"
 import { searchSpotify } from "../../../utilities/results-services"
-import ResultsCardShow from "../../../components/Results/ResultsCardShow"
+import { useState, useEffect } from "react"
+import { useParams } from "react-router"
 
 export default function SearchesShow() {
     const { id } = useParams()

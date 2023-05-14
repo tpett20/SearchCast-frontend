@@ -23,7 +23,7 @@ export default function SearchForm({ setIsLoading }) {
     }
 
     return isAuthenticated && !isLoading ? (
-        <div className="col-6">
+        <div className="col-12 col-md-8 col-lg-7 col-xl-6">
             <form onSubmit={handleSubmit} className="input-group my-3">
                 <input
                     value={newForm.input}

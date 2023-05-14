@@ -10,7 +10,7 @@ export async function requestSpotifyToken() {
     const clientSecret = process.env.REACT_APP_CLIENT_SECRET
     const tokenURL = 'https://accounts.spotify.com/api/token'
     const credentials = Buffer.from(`${clientId}:${clientSecret}`, 'utf-8').toString('base64')
-    const data = qs.stringify({'grant_type':'client_credentials'})
+    const data = qs.stringify({ 'grant_type': 'client_credentials' })
 
     try {
         const response = await axios.post(tokenURL, data, {
@@ -19,7 +19,6 @@ export async function requestSpotifyToken() {
                 "Content-Type": "application/x-www-form-urlencoded"
             }
         })
-        console.log(response.data.access_token)
         return response.data.access_token
     } catch (err) {
         console.log(err)
@@ -31,7 +30,6 @@ export async function searchSpotifyAPI(input) {
 
     const convertedInput = convertInput(input)
     const spotifyToken = getSpotifyToken()
-    console.log('Search Spotify - Token', spotifyToken)
     const apiURL = `https://api.spotify.com/v1/search?q=${convertedInput}&type=episode&market=US&limit=30`
 
     try {

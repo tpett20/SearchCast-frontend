@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react"
-import { getSearches } from '../../../utilities/searches-services'
+import Introduction from "../../../components/Introduction/Introduction"
+import SearchForm from "../../../components/SearchForm/SearchForm"
 import ResultsCard from "../../../components/Results/ResultsCard"
 import ResultsCardLoad from "../../../components/Results/ResultsCardLoad"
-import SearchForm from "../../../components/SearchForm/SearchForm"
-import Introduction from "../../../components/Introduction/Introduction"
+import { getSearches } from '../../../utilities/searches-services'
+import { useState, useEffect } from "react"
 import { useAuth0 } from "@auth0/auth0-react"
 
 export default function SearchesIndex() {

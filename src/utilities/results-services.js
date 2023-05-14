@@ -13,7 +13,6 @@ export async function accessSpotify() {
 export async function searchSpotify(input) {
     try {
         const data = await resultsAPI.searchSpotifyAPI(input)
-        // const data = await fetch('../sampleData.json').then(response => response.json()).then(json => json.episodes.items)
         return data
     } catch (err) {
         console.log(err)

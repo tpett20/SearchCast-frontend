@@ -47,7 +47,6 @@ export async function detail(id) {
             method: "GET"
         }
         const url = `${BASE_URL}${id}`
-        console.log(url)
         const response = await fetch (url, options)
 
         if (response.ok) {
@@ -67,7 +66,6 @@ export async function destroy(id) {
             method: "DELETE"
         }
         const url = `${BASE_URL}${id}`
-        console.log(url)
         const response = await fetch(url, options)
 
         if (response.ok) {
