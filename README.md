@@ -5,7 +5,7 @@
 ![SearchCast Home](https://i.imgur.com/6ph5RMt.png)
 
 
-## Technologies Used (Frontend)
+## Technologies Used
 
 Frontend: React, Spotify Web API, Auth0, Netlify, Bootstrap, JavaScript, HTML, CSS
 
