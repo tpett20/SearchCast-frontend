@@ -1,6 +1,5 @@
 import './App.css';
-import { useState, useEffect, useContext } from 'react';
-import { SpotifyContext } from '../../data';
+import { useEffect } from 'react';
 import { getSpotifyToken, setSpotifyToken, clearSpotifyToken } from '../../utilities/spotifyToken';
 import { setSpotifyTokenTimer, checkSpotifyTokenTimer, clearSpotifyTokenTimer } from '../../utilities/SpotifyTokenTimer';
 import { accessSpotify } from '../../utilities/results-services';
@@ -10,19 +9,11 @@ import Main from '../Main';
 
 function App() {
 
-    const {Provider: SpotifyToken} = SpotifyContext
-
-    const [currentSpotifyToken, setCurrentSpotifyToken] = useState(null)
-
     const establishSpotifyConnection = async () => {
         const localToken = getSpotifyToken()
         const timerStatus = checkSpotifyTokenTimer()
-        if (localToken && timerStatus) {
-            setCurrentSpotifyToken(localToken)
-        } 
-        else if (localToken) {
+        if (localToken && !timerStatus) {
             // localToken exists, but timer has expired
-            console.log('hitting expired timer')
             clearSpotifyToken()
             clearSpotifyTokenTimer()
             try {
@@ -33,11 +24,10 @@ function App() {
                 console.log(err)
             }
         }
-        else {
+        else if (!localToken) {
             // no localToken exists
             try {
                 const newToken = await accessSpotify()
-                setCurrentSpotifyToken(newToken)
                 setSpotifyToken(newToken)
                 setSpotifyTokenTimer()
             } catch (err) {
@@ -52,13 +42,8 @@ function App() {
 
     return (
         <div className="App container">
-            <SpotifyToken value={{
-                currentSpotifyToken, 
-                setCurrentSpotifyToken
-            }}>
                 <Header />
                 <Main />
-            </SpotifyToken>
         </div>
     );
 }

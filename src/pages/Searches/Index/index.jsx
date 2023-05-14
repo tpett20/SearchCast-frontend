@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { getSearches, createSearch } from '../../../utilities/searches-services'
+import { getSearches } from '../../../utilities/searches-services'
 import ResultsCard from "../../../components/Results/ResultsCard"
 import ResultsCardLoad from "../../../components/Results/ResultsCardLoad"
 import SearchForm from "../../../components/SearchForm/SearchForm"
