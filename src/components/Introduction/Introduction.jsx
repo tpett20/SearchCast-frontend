@@ -6,11 +6,11 @@ export default function Introduction() {
     const {user, isAuthenticated, isLoading, loginWithRedirect} = useAuth0()
     
     if (isAuthenticated && !isLoading) {
-        console.log(user)
         return (
             <>
                 <h1 className="mb-3">👋 Howdy, {
                     user.sub.includes('google') ? user.given_name : user.nickname
+                    // prevents the name from being too long, particularly useful for mobile view
                 }!</h1>
                 <h4 className="my-3">Thanks for using SearchCast!</h4>
             </>
