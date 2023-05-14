@@ -2,6 +2,8 @@
 
 [SearchCast](https://searchcast.netlify.app/) is an app that helps you find podcast episodes based on your interests. Rather than follow a particular show, check in to see new and top podcasts that feature your favorite celebrity, athlete, or topic.
 
+![SearchCast Home](https://i.imgur.com/6ph5RMt.png)
+
 
 ## Technologies Used (Frontend)
 
@@ -25,3 +27,8 @@ Each search shows a preview of the top 3 results on the home page, along with a 
 - Show the results in date order on the index page so that users can more easily see when new podcasts are added. 
 - Have a Detail page view for each episode's podcast (show).
 - Further integrate Auth to protect routes. 
+
+## Screenshots
+![SearchCast Logged In Home Page](https://i.imgur.com/AP9HaZe.png)
+![SearchCast Search Detail Page](https://i.imgur.com/p8j3U9M.png)
+![SearchCast Login](https://i.imgur.com/iw21cez.png)
