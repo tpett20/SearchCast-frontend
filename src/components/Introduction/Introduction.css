@@ -1,0 +1,9 @@
+.CreateAccount {
+    text-decoration: underline;
+    text-decoration-color: rgb(0,0,0,.6);
+    cursor: pointer;
+}
+
+.CreateAccount:hover {
+    text-decoration-color: rgb(0,0,0,1);
+}

@@ -4,7 +4,7 @@ export default function ResultsCardLoad() {
             <div className="card text-bg-secondary mb-3" aria-hidden="true">
                 <div className="card-header">
                     <h2 className="card-text placeholder-glow">
-                    <span className="placeholder col-6"></span>
+                        <span className="placeholder col-6"></span>
                     </h2>
                 </div>
                 <div className="card-body bg-white rounded-bottom">

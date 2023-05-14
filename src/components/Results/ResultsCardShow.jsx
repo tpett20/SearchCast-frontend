@@ -1,4 +1,4 @@
-export default function ResultsCardShow({result}) {
+export default function ResultsCardShow({ result }) {
 
     return (
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">

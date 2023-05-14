@@ -5,7 +5,7 @@ import { limitResults } from "../../utilities/spotifyResults"
 import DeleteButton from "../DeleteButton/DeleteButton"
 import ResultsCardLoad from "./ResultsCardLoad"
 
-export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
+export default function ResultsCard({ search, setIsLoading: setIndexLoading }) {
     const [results, setResults] = useState(null)
     const [isLoading, setIsLoading] = useState(true)
 
@@ -19,7 +19,7 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
             console.log(err)
         }
     }
-    
+
     useEffect(() => {
         handleRequest()
         // eslint-disable-next-line
@@ -36,21 +36,21 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
                             </Link>
                         </div>
                         <div className="d-inline-flex">
-                            <DeleteButton id={search._id} setIndexLoading={setIndexLoading}/> 
+                            <DeleteButton id={search._id} setIndexLoading={setIndexLoading} />
                         </div>
                     </div>
                     <ul className="list-group list-group-flush">
                         {results.length ? results.map((r, idx) => {
                             return (
                                 <li key={idx} className="list-group-item text-truncate">
-                                    <img src={r.images[2].url} alt={r.name}/> {idx+1}. {r.name}
+                                    <img src={r.images[2].url} alt={r.name} /> {idx + 1}. {r.name}
                                 </li>
                             )
-                        }) : 
+                        }) :
                             <>
                                 <li className="list-group-item fw-bold"><span className="fs-5">🤔</span> This search didn't turn up any results.</li>
-                                <li className="list-group-item">Note that searches are case sensitive, so be sure to type your search as it would most likely appear in a podcast description. <br/>
-                                For example, use "Dolly Parton" rather than "dolly parton" or "software engineering" rather than "Software Engineering."</li>
+                                <li className="list-group-item">Note that searches are case sensitive, so be sure to type your search as it would most likely appear in a podcast description. <br />
+                                    For example, use "Dolly Parton" rather than "dolly parton" or "software engineering" rather than "Software Engineering."</li>
                             </>
                         }
                     </ul>
@@ -60,6 +60,6 @@ export default function ResultsCard({search, setIsLoading: setIndexLoading}) {
     }
 
     return (
-        isLoading ? <ResultsCardLoad/> : loaded()
+        isLoading ? <ResultsCardLoad /> : loaded()
     )
 }

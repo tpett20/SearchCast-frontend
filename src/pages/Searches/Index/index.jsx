@@ -15,7 +15,7 @@ export default function SearchesIndex() {
     async function handleRequest() {
         try {
             const apiResponse = await getSearches()
-            if (user) {
+            if (isAuthenticated) {
                 const filteredSearches = apiResponse.filter(s => s.user === user.sub)
                 setSearches(filteredSearches)
                 setIsLoading(false)

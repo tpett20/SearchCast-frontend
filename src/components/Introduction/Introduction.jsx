@@ -1,10 +1,11 @@
 import { useAuth0 } from "@auth0/auth0-react"
+import './Introduction.css'
 
 export default function Introduction() {
 
-    const {user, isLoading} = useAuth0()
+    const {user, isAuthenticated, isLoading, loginWithRedirect} = useAuth0()
 
-    if (user && !isLoading) {
+    if (isAuthenticated && !isLoading) {
         return (
             <>
                 <h1 className="mb-3">👋 Howdy, {user.name}!</h1>
@@ -12,22 +13,22 @@ export default function Introduction() {
             </>
         )
     }
-    else if (!user && !isLoading) {
+    else if (!isAuthenticated && !isLoading) {
         return (
             <>
                 <h1 className="mb-3">Welcome to SearchCast!</h1>
                 <h4 className="mb-3">Track podcasts based on your interests.</h4>
-                <p>Log in or create an account to add keyword searches that you'd like to keep an eye on.</p>
+                <p><span onClick={() => loginWithRedirect()} className="CreateAccount">Log in or create an account</span> to add keyword searches that you'd like to keep an eye on.</p>
                 <p className="my-3">Here are a few examples to give you an idea of how SearchCast works: </p>
             </>
         )
     }
     else {
         return (
-            <div>
+            <>
                 <h1 className="mb-3">Loading...</h1>
                 <h4 className="my-3">...</h4>
-            </div>
+            </>
         )
     }
 }

@@ -42,8 +42,8 @@ function App() {
 
     return (
         <div className="App container">
-                <Header />
-                <Main />
+            <Header />
+            <Main />
         </div>
     );
 }

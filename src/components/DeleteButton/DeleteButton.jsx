@@ -3,9 +3,9 @@ import { useNavigate } from "react-router"
 import { useAuth0 } from "@auth0/auth0-react"
 import './DeleteButton.css'
 
-export default function DeleteButton({id, setIndexLoading}) {
-    
-    const {user, isLoading} = useAuth0()
+export default function DeleteButton({ id, setIndexLoading }) {
+
+    const { isAuthenticated, isLoading } = useAuth0()
     const navigate = useNavigate()
 
     async function handleDeleteSearch() {
@@ -23,13 +23,10 @@ export default function DeleteButton({id, setIndexLoading}) {
             navigate(`/`)
         }
     }
-    if (!isLoading && user) {
-        return (
-            <button onClick={() => handleDeleteSearch(id)} className="btn p-0 DeleteButton">
-                ❌
-            </button>
-        )
-    } else {
-        return <></>
-    }
+
+    return !isLoading && isAuthenticated ? (
+        <button onClick={() => handleDeleteSearch(id)} className="btn p-0 DeleteButton">
+            ❌
+        </button>
+    ) : <></>
 }
