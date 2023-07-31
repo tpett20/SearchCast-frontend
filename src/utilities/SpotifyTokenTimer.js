@@ -11,8 +11,4 @@ const setSpotifyTokenTimer = () => {
     return localStorage.setItem('spotifyTokenTimer', timer)
 }
 
-const clearSpotifyTokenTimer = () => {
-    return localStorage.setItem('spotifyTokenTimer', 0)
-}
-
-export { checkSpotifyTokenTimer, setSpotifyTokenTimer, clearSpotifyTokenTimer }
+export { checkSpotifyTokenTimer, setSpotifyTokenTimer }
