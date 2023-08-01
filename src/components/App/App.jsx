@@ -4,16 +4,16 @@ import { getSpotifyToken, setSpotifyToken } from '../../utilities/spotifyToken';
 import { setSpotifyTokenTimer, checkSpotifyTokenTimer } from '../../utilities/SpotifyTokenTimer';
 import { accessSpotify } from '../../utilities/results-services';
 
-import Header from '../Header';
-import Main from '../Main';
+import Header from '../Header/Header';
+import Main from '../Main/Main';
 
 function App() {
 
     const establishSpotifyConnection = async () => {
         const localToken = getSpotifyToken()
         const timerStatus = checkSpotifyTokenTimer()
+        // if there's no localToken or timer has expired
         if (!localToken || !timerStatus) {
-            // localToken exists or timer has expired
             try {
                 const newToken = await accessSpotify()
                 setSpotifyToken(newToken)
