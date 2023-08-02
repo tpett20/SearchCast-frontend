@@ -6,8 +6,4 @@ const setSpotifyToken = (token) => {
     return localStorage.setItem('spotifyToken', token)
 }
 
-const clearSpotifyToken = () => {
-    return localStorage.setItem('spotifyToken', "")
-}
-
-export { getSpotifyToken, setSpotifyToken, clearSpotifyToken }
+export { getSpotifyToken, setSpotifyToken }

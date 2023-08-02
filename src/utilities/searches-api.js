@@ -35,7 +35,7 @@ export async function create(data) {
         } else {
             throw new Error("Invalid POST Request")
         }
-    } catch(err) {
+    } catch (err) {
         console.log(err)
         return err
     }

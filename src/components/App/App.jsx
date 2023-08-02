@@ -1,38 +1,31 @@
 import './App.css';
-import { useEffect } from 'react';
-import { getSpotifyToken, setSpotifyToken, clearSpotifyToken } from '../../utilities/spotifyToken';
-import { setSpotifyTokenTimer, checkSpotifyTokenTimer, clearSpotifyTokenTimer } from '../../utilities/SpotifyTokenTimer';
+import { useState, useEffect } from 'react';
+import { getSpotifyToken, setSpotifyToken } from '../../utilities/spotifyToken';
+import { setSpotifyTokenTimer, checkSpotifyTokenTimer } from '../../utilities/SpotifyTokenTimer';
 import { accessSpotify } from '../../utilities/results-services';
 
-import Header from '../Header';
-import Main from '../Main';
+import Header from '../Header/Header';
+import Main from '../Main/Main';
 
 function App() {
+
+    const [connectionLoading, setConnectionLoading] = useState(true)
 
     const establishSpotifyConnection = async () => {
         const localToken = getSpotifyToken()
         const timerStatus = checkSpotifyTokenTimer()
-        if (localToken && !timerStatus) {
-            // localToken exists, but timer has expired
-            clearSpotifyToken()
-            clearSpotifyTokenTimer()
+        // if there's no localToken or timer has expired
+        if (!localToken || !timerStatus) {
             try {
                 const newToken = await accessSpotify()
                 setSpotifyToken(newToken)
                 setSpotifyTokenTimer()
+                setConnectionLoading(false)
             } catch (err) {
                 console.log(err)
             }
-        }
-        else if (!localToken) {
-            // no localToken exists
-            try {
-                const newToken = await accessSpotify()
-                setSpotifyToken(newToken)
-                setSpotifyTokenTimer()
-            } catch (err) {
-                console.log(err)
-            }
+        } else {
+            setConnectionLoading(false)
         }
     }
 
@@ -40,7 +33,7 @@ function App() {
         establishSpotifyConnection()
     }, [])
 
-    return (
+    return connectionLoading ? <></> : (
         <div className="App container">
             <Header />
             <Main />
